@@ -27,7 +27,7 @@ WORKSPACE = st.secrets.get("workspace_key","default")
 for sub in ["data","models","reports"]: Path(f"tenants/{WORKSPACE}/{sub}").mkdir(parents=True, exist_ok=True)
 ORG = st.secrets.get("org_name","Your Organization")
 
-st.title("💧 Drinking Water Quality Classifier (End-to-End)")
+st.title("💧 Drinking Water Quality Classifier")
 st.caption(f"{ORG} • Signed in as **{name}** (role: {role}) • Workspace: **{WORKSPACE}**")
 st.info("Data and models are stored under this workspace only. Export/delete via Ops page.")
 
